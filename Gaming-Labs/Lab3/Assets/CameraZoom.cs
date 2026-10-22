@@ -8,6 +8,7 @@ public class CameraZoom : MonoBehaviour
     public float TargetZoom = 3;
     private float ScrollData;
     public float ZoomSpeed = 3;
+    public float MinZoom = 3;
     // Start is called before the first frame update
     void Start()
     {
