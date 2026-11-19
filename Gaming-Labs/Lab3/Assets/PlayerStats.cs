@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -60,8 +61,7 @@ public class PlayerStats : MonoBehaviour
             }
             else if (lives == 0 && health == 0)
             {
-                Debug.Log("Game Over");
-                Destroy(this.gameObject);
+              SceneManager.LoadScene(3);
             }
 
             Debug.Log("Player Health: " + health.ToString());
@@ -71,6 +71,7 @@ public class PlayerStats : MonoBehaviour
         isImmune=true;
         immunityTime=0f;
     }
+
 
 
 
